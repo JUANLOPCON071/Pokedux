@@ -1,12 +1,12 @@
 import PokemonCard from "../PokemonCard/PokemonCard";
 import './PokemonList.css'
 
-const PokemonList = ({ pokemons = [1, 2, 3, 4, 5, 6, 7, 8 , 9, 10] }) => {
-
+const PokemonList = ({ pokemons }) => {
+  
   return (
     <div className='PokemonList'>
-      {pokemons.map((pokemon, index) => {
-        return <PokemonCard key={index} />;
+      {pokemons.map((pokemon) => {
+        return <PokemonCard name={pokemon.name} key={pokemon.name} />;
       })}
     </div>
   );
