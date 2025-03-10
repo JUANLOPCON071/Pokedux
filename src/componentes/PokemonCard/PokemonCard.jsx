@@ -9,7 +9,7 @@ const PokemonCard = ({ name, image }) => {
             cover={<img src={image} alt={name} />}
             extra={<StarOutlined/>}
         >
-                <Meta description='fire, magic'/>
+            <Meta description='fire, magic'/>
         </Card>
     )
 }
